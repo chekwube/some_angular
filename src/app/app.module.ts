@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
-//import { HttpModule } from '@angular/http';
+import { HttpModule } from '@angular/http';
+//import { HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { TodoListHeaderComponent } from './todo-list-header/todo-list-header.component';
@@ -21,7 +22,8 @@ import { TodoDataService } from './todo-data.service';
   imports: [
     BrowserModule,
     FormsModule,
-   // HttpModule
+    HttpModule,
+    //HttpClient
   ],
   providers: [TodoDataService],
   bootstrap: [AppComponent]
